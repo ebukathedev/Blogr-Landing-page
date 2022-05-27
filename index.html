@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="/dist/style.css" />
+
+		<title>Frontend Mentor | [Blogr]</title>
+	</head>
+	<body>
+		<main>
+			<header class="header">
+				<div class="container">
+					<nav>
+						<a class="logo" href="#">
+							<img src="./images/logo.svg" alt="logo" />
+						</a>
+						<div class="hamburger hide-for-desktop" id="menu-btn">
+							<img src="./images/icon-hamburger.svg" alt="" />
+						</div>
+
+						<ul class="header-links hide-for-mobile">
+							<li>
+								<div class="open-sub-links">
+									<span
+										class="open-sub-menu-link"
+										id="product-link"
+										>Product</span
+									>
+									<div class="light-arrow-img">
+										<img
+											src="./images/icon-arrow-light.svg"
+											alt="Down arrow"
+											class="product-link"
+										/>
+									</div>
+								</div>
+								<ul class="product-link sub-menu-links hide">
+									<li>Overview</li>
+									<li>Pricing</li>
+									<li>Marketplace</li>
+									<li>Features</li>
+									<li>Integrations</li>
+								</ul>
+							</li>
+							<li>
+								<div class="open-sub-links">
+									<span
+										class="open-sub-menu-link"
+										id="company-link"
+										>Company</span
+									>
+									<div class="light-arrow-img">
+										<img
+											src="./images/icon-arrow-light.svg"
+											alt="Down arrow"
+											class="company-link"
+										/>
+									</div>
+								</div>
+								<ul class="company-link sub-menu-links hide">
+									<li>About</li>
+									<li>Team</li>
+									<li>Blog</li>
+									<li>Careers</li>
+								</ul>
+							</li>
+							<li>
+								<div class="open-sub-links">
+									<span
+										class="open-sub-menu-link"
+										id="connect-link"
+										>Connect</span
+									>
+									<div class="light-arrow-img">
+										<img
+											src="./images/icon-arrow-light.svg"
+											alt="Down arrow"
+											class="connect-link"
+										/>
+									</div>
+								</div>
+								<ul class="connect-link sub-menu-links hide">
+									<li>Contact</li>
+									<li>Newsletter</li>
+									<li>LinkedIn</li>
+								</ul>
+							</li>
+						</ul>
+						<div class="header-buttons hide-for-mobile">
+							<button>Login</button>
+							<button>Sign Up</button>
+						</div>
+					</nav>
+
+					<div class="copy">
+						<h1> A modern publishing platform </h1>
+						<p> Grow your audience and build your online brand </p>
+					</div>
+					<div class="action-btns">
+						<button> Start for Free </button>
+						<button> Learn More </button>
+					</div>
+					<!-- bg shape patterns -->
+					<div class="shape-1"></div>
+					<div class="shape-2"></div>
+					<div class="shape-3"></div>
+					<div class="shape-4 hide-for-mobile"></div>
+				</div>
+
+				<ul class="mobile-menu">
+					<li>
+						<div class="open-sub-menu">
+							<span class="open-sub-menu-btn" id="product"
+								>Product</span
+							>
+							<div class="arrow-img">
+								<img
+									src="./images/icon-arrow-dark.svg"
+									alt="Down arrow"
+									class="product"
+								/>
+							</div>
+						</div>
+						<ul class="product sub-menu hide">
+							<li>Overview</li>
+							<li>Pricing</li>
+							<li>Marketplace</li>
+							<li>Features</li>
+							<li>Integrations</li>
+						</ul>
+					</li>
+					<li>
+						<div class="open-sub-menu">
+							<span class="open-sub-menu-btn" id="company"
+								>Company</span
+							>
+							<div class="arrow-img">
+								<img
+									src="./images/icon-arrow-dark.svg"
+									alt="Down arrow"
+									class="company"
+								/>
+							</div>
+						</div>
+						<ul class="company sub-menu hide">
+							<li>About</li>
+							<li>Team</li>
+							<li>Blog</li>
+							<li>Careers</li>
+						</ul>
+					</li>
+					<li>
+						<div class="open-sub-menu">
+							<span class="open-sub-menu-btn" id="connect"
+								>Connect</span
+							>
+							<div class="arrow-img">
+								<img
+									src="./images/icon-arrow-dark.svg"
+									alt="Down arrow"
+									class="connect"
+								/>
+							</div>
+						</div>
+						<ul class="connect sub-menu hide">
+							<li>Contact</li>
+							<li>Newsletter</li>
+							<li>LinkedIn</li>
+						</ul>
+					</li>
+					<hr />
+					<button>Login</button>
+					<button>Sign Up</button>
+				</ul>
+			</header>
+
+			<section class="top">
+				<h2 class="sub-heading">Designed for the future</h2>
+				<div class="top-container">
+					<div class="top-img-bg">
+						<div class="editor-large hide-for-mobile">
+							<img
+								src="./images/illustration-editor-desktop.svg"
+								alt="Editor"
+							/>
+						</div>
+						<div class="editor-small hide-for-desktop">
+							<img
+								src="./images/illustration-editor-mobile.svg"
+								alt="Editor"
+							/>
+						</div>
+					</div>
+					<article class="top-article">
+						<div class="article-item">
+							<h2> Introducing an extensible editor </h2>
+							<p>
+								Blogr features an exceedingly intuitive
+								interface which lets you focus on one thing:
+								creating content. The editor supports management
+								of multiple blogs and allows easy manipulation
+								of embeds such as images, videos, and Markdown.
+								Extensibility with plugins and themes provide
+								easy ways to add functionality or change the
+								looks of a blog.
+							</p>
+						</div>
+						<div class="article-item">
+							<h2> Robust content management </h2>
+							<p>
+								Flexible content management enables users to
+								easily move through posts. Increase the
+								usability of your blog by adding customized
+								categories, sections, format, or flow. With this
+								functionality, you're in full control.
+							</p>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section class="middle">
+				<div class="phones">
+					<img
+						src="./images/illustration-phones.svg"
+						alt="Two phones"
+					/>
+				</div>
+				<div class="middle-container">
+					<div class="circle-pattern">
+						<img
+							src="./images/bg-pattern-circles.svg"
+							alt="Circle pattern background"
+						/>
+					</div>
+					<article class="middle-article">
+						<div class="article-item">
+							<h2> State of the Art Infrastructure </h2>
+							<p>
+								With reliability and speed in mind, worldwide
+								data centers provide the backbone for ultra-fast
+								connectivity. This ensures your site will load
+								instantly, no matter where your readers are,
+								keeping your site competitive.
+							</p>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section class="bottom">
+				<div class="laptop-large hide-for-mobile">
+					<img
+						src="./images/illustration-laptop-desktop.svg"
+						alt=""
+					/>
+				</div>
+				<div class="laptop-small hide-for-desktop">
+					<img
+						src="./images/illustration-laptop-mobile.svg"
+						alt="Laptop"
+				/></div>
+				<article class="bottom-article">
+					<div class="article-item">
+						<h2> Free, open, simple </h2>
+						<p>
+							Blogr is a free and open source application backed
+							by a large community of helpful developers. It
+							supports features such as code syntax highlighting,
+							RSS feeds, social media integration, third-party
+							commenting tools, and works seamlessly with Google
+							Analytics. The architecture is clean and is
+							relatively easy to learn.
+						</p>
+					</div>
+					<div class="article-item">
+						<h2> Powerful tooling </h2>
+						<p>
+							Batteries included. We built a simple and
+							straightforward CLI tool that makes customization
+							and deployment a breeze, but capable of producing
+							even the most complicated sites.
+						</p>
+					</div>
+				</article>
+			</section>
+
+			<footer>
+				<div class="fotter-logo"
+					><img src="./images/logo.svg" alt="Logo"
+				/></div>
+				<ul>
+					<li class="title"> Product </li>
+					<li> Overview </li>
+					<li> Pricing </li>
+					<li> Marketplace </li>
+					<li> Features </li>
+					<li> Integrations </li>
+				</ul>
+				<ul>
+					<li class="title"> Company </li>
+					<li> About </li>
+					<li> Team </li>
+					<li> Blog </li>
+					<li> Careers </li>
+				</ul>
+				<ul>
+					<li class="title"> Connect </li>
+					<li> Contact </li>
+					<li> Newsletter </li>
+					<li> LinkedIn </li>
+				</ul>
+			</footer>
+		</main>
+
+		<!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+		<script src="/app/js/main.js"></script>
+	</body>
+</html>
